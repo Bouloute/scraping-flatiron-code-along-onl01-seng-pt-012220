@@ -32,11 +32,3 @@ class Scraper
     #title  =  raw_courses[0 to 6].children[3].text
   end
 end
-
-
-
-
-
-
-
-

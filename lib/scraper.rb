@@ -28,6 +28,8 @@ class Scraper
 
   def make_courses
     raw_courses = get_courses
-    binding.pry
+  #  binding.pry
+    
+    #title  =  raw_courses[0 to 6].children[3].text
   end
 end

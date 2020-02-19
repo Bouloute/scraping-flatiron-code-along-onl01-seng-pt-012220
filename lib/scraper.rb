@@ -23,7 +23,7 @@ class Scraper
   def get_courses
     page = get_page
     posts = page.css(".post")
-    p posts.attribiutes
+    p posts.attribiute
   end
 
   def make_courses

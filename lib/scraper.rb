@@ -1,5 +1,6 @@
 require 'nokogiri'
 require 'open-uri'
+require 'binding.pry'
 
 require_relative './course.rb'
 
@@ -23,7 +24,7 @@ class Scraper
   def get_courses
     page = get_page
     posts = page.css(".post.same-height-left")
-    p posts
+    binding.pry
   end
 
   def make_courses

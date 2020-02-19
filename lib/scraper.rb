@@ -22,8 +22,7 @@ class Scraper
   end
 
   def get_courses
-    page = get_page
-    page.css(".post")
+    get_page.css(".post")
   end
 
   def make_courses
@@ -33,3 +32,11 @@ class Scraper
     #title  =  raw_courses[0 to 6].children[3].text
   end
 end
+
+
+
+
+
+
+
+

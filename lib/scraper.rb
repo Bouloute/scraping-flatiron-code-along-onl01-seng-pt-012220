@@ -26,9 +26,11 @@ class Scraper
   end
 
   def make_courses
-    raw_courses = get_courses
-  #  binding.pry
-
-    #title  =  raw_courses[0 to 6].children[3].text
+    get_courses.each do |post|
+      course = Course.new
+      course.title = post.css("h2").text
+      course.schedule = post.css(".date").text
+      course.description = post.css("p").text
+    end
   end
 end

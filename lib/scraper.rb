@@ -22,7 +22,7 @@ class Scraper
 
   def get_courses
     page = get_page
-    posts = page.css(".post")
+    posts = page.css(".post.same-height-left")
     p posts.attribiutes
   end
 

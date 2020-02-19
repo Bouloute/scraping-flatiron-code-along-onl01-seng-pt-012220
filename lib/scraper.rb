@@ -27,5 +27,7 @@ class Scraper
   end
 
   def make_courses
+    raw_courses = get_courses
+    binding.pry
   end
 end
